@@ -1,0 +1,170 @@
+:root {
+    --main-bg: #121212;
+    --accent: #00bfff;
+    --text: #e0e0e0;
+    --card-bg: #1e1e1e;
+}
+  
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: var(--main-bg);
+    color: var(--text);
+}
+  
+header {
+    background-color: #0a0a0a;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--accent);
+}
+  
+.halo-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+  
+.intro-video video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+  
+.details .text {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+}
+  
+.details h1 {
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+  
+.carousel {
+    background-color: #1c1c1c;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    margin-bottom: 40px;
+}
+
+.carousel h2 {
+    font-size: 2.2rem;
+    color: var(--accent);
+    margin-bottom: 30px;
+    text-shadow: 0 0 8px rgba(0, 191, 255, 0.8);
+}
+
+.carousel-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.column img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    animation: fadeIn 1s ease-in-out both;
+}
+
+.column img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 191, 255, 0.5);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.95); }
+    100% { opacity: 1; transform: scale(1); }
+}
+  
+/* Logros */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.achievements h2 {
+    text-align: center;
+    color: var(--accent);
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.achievement-card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 191, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(60, 255, 0, 0.5);
+}
+
+.achievement-card h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+
+.achievement-card p {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 0.9rem;
+    color: var(--text);
+    margin: 0;
+}
+
+  
+footer {
+    background-color: #0a0a0a;
+    color: #888;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+  
+.video-container {
+    max-width: 100%;
+    margin: 20px 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    max-width: 100%;
+    height: 500px;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .carousel-grid {
+        flex-direction: column;
+    }
+}

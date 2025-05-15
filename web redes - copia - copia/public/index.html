@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concurso Gamer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Concurso Gamer</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#informacion">Información</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <h1>¡Demuestra tu habilidad en <span class="highlight">Halo</span>, <span class="highlight">Minecraft</span> y <span class="highlight">Counter-Strike 2</span>!</h1>
+            <p>Participa en nuestro emocionante concurso gamer y compite por premios increíbles.</p>
+            <a href="#registro" class="cta-button">¡Regístrate ahora!</a>
+        </div>
+    </section>
+
+    <section class="info" id="informacion">
+        <h2>Juegos del Concurso</h2>
+        <div class="games">
+            <div class="game">
+                <img src="imagenes/halo.jpg" alt="Halo">
+                <h3>Halo</h3>
+                <p>Compite en épicas batallas de Halo y derrota al  demuestra tu puntería y estrategia.</p>
+                <a href="halo-details.html" class="ver-mas-btn">Ver más</a>
+            </div>
+            <div class="game">
+                <img src="imagenes/minecraaft.jpg" alt="Minecraft">
+                <h3>Minecraft</h3>
+                <p>Muestra tu creatividad y habilidades de supervivencia en desafíos de Minecraft.</p>
+                <a href="minecraft-details.html" class="ver-mas-btn">Ver más</a>
+            </div>
+            <div class="game">
+                <img src="imagenes/counter-strike-2-pc-juego-steam-cover.jpg" alt="Counter-Strike 2">
+                <h3>Counter-Strike 2</h3>
+                <p>Únete a la acción táctica de Counter-Strike 2, el juego de disparos en primera persona donde te enfrentas a intensos combates</p>
+                <a href="counter-Strike-details.html" class="ver-mas-btn">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="registro" id="registro">
+        <h2>Registro</h2>
+        <form>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="juego">Juego en el que deseas participar:</label>
+            <select id="juego" name="juego" required>
+                <option value="">Selecciona un juego</option>
+                <option value="halo">Halo</option>
+                <option value="minecraft">Minecraft</option>
+                <option value="fortnite">Fortnite</option>
+            </select>
+
+            <input type="submit" value="Enviar" class="submit-btn">
+        </form>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes preguntas? Escríbenos a <a href="mailto:contacto@concursogamer.com">contacto@concursogamer.com</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Concurso Gamer. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
